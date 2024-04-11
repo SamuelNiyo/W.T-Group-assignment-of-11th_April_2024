@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combined Form</title>
+    <style>
+        .hidden {
+            display: none;
+        }
+
+        /* Style for vertical layout */
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 300px; /* Adjust the max width as needed */
+            margin: 0 auto; /* Center the form */
+        }
+
+        label {
+            margin-bottom: 10px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="date"] {
+            margin-bottom: 20px;
+        }
+
+        button {
+            align-self: flex-start;
+        }
+
+        /* Style for horizontal layout */
+        form.horizontal label {
+            display: inline-block;
+            width: 100px; /* Adjust label width as needed */
+        }
+
+        form.horizontal input {
+            display: inline-block;
+            width: calc(100% - 100px); /* Adjust input width as needed */
+        }
+    </style>
+</head>
+<body>
+    <h2>Select Form to Fill</h2>
+    <button onclick="showForm('userForm')">User Form</button>
+    <button onclick="showForm('studentForm')">Student Form</button>
+    <button onclick="showForm('statusForm')">Status Form</button>
+    <button onclick="showForm('migrationForm')">Migration Form</button>
+    <button onclick="showForm('loanApplicationForm')">Loan Application Form</button>
+    <button onclick="showForm('loanPaymentForm')">Loan Payment Form</button>
+    <button onclick="showForm('commentForm')">Comment Form</button>
+
+    <!-- User Form -->
+    <form id="userForm" class="hidden" action="submit_user.php" method="post">
+        <label for="role">Role:</label>
+        <input type="text" id="role" name="role">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+        <label for="st_id">Student ID:</label>
+        <input type="text" id="st_id" name="st_id">
+        <button type="submit">Submit</button>
+    </form>
+
+    <!-- Student Form -->
+    <form id="studentForm" class="hidden" action="submit_student.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        <label for="reg">Registration:</label>
+        <input type="text" id="reg" name="reg">
+        <label for="id">ID:</label>
+        <input type="text" id="id" name="id">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        <label for="class">Class:</label>
+        <input type="text" id="class" name="class">
+        <button type="submit">Submit</button>
+    </form>
+
+    <!-- Migration Form -->
+    <form id="migrationForm" class="hidden" action="submit_migration.php" method="post">
+        <label for="batch">Batch:</label>
+        <input type="text" id="batch" name="batch">
+        <button type="submit">Submit</button>
+    </form>
+
+    <!-- Loan Application Form -->
+    <form id="loanApplicationForm" class="hidden" action="submit_loan_application.php" method="post">
+        <label for="description">Description:</label>
+        <input type="text" id="description" name="description">
+        <label for="amount">Amount:</label>
+        <input type="text" id="amount" name="amount">
+        <label for="status">Status:</label>
+        <input type="text" id="status" name="status">
+        <label for="pay_status">Payment Status:</label>
+        <input type="text" id="pay_status" name="pay_status">
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date">
+        <label for="user_id">User ID:</label>
+        <input type="text" id="user_id" name="user_id">
+        <label for="st_id">Student ID:</label>
+        <input type="text" id="st_id" name="st_id">
+        <button type="submit">Submit</button>
+    </form>
+
+    <!-- Loan Payment Form -->
+    <form id="loanPaymentForm" class="hidden" action="submit_loan_payment.php" method="post">
+        <label for="p_id">P ID:</label>
+        <input type="text" id="p_id" name="p_id">
+        <label for="loan_id">Loan ID:</label>
+        <input type="text" id="loan_id" name="loan_id">
+        <label for="payment_date">Payment Date:</label>
+        <input type="date" id="payment_date" name="payment_date">
+        <label for="payment_amount">Payment Amount:</label>
+        <input type="text" id="payment_amount" name="payment_amount">
+        <label for="user_id">User ID:</label>
+        <input type="text" id="user_id" name="user_id">
+        <button type="submit">Submit</button>
+    </form>
+
+    <!-- Comment Form -->
+    <form id="commentForm" class="hidden" action="submit_comment.php" method="post">
+        <input type="hidden" id="user_id" name="user_id" value="1"> <!-- Example user_id, replace with actual user ID -->
+        <input type="hidden" id="loan_id" name="loan_id" value="123"> <!-- Example loan_id, replace with actual loan ID -->
+        <label for="comment_text">Comment:</label>
+        <textarea id="comment_text" name="comment_text" rows="4" cols="50"></textarea>
+        <button type="submit">Submit</button>
+    </form>
+
+    <!-- Add more forms as needed -->
+
+    <script>
+        function showForm(formId) {
+            // Hide all forms
+            const forms = document.querySelectorAll('form');
+            forms.forEach(form => {
+                form.classList.add('hidden');
+            });
+
+            // Show the selected form
+            const selectedForm = document.getElementById(formId);
+            if (selectedForm) {
+                selectedForm.classList.remove('hidden');
+            }
+        }
+    </script>
+</body>
+</html>
