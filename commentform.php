@@ -36,12 +36,6 @@
 </head>
 <body>
 <center>
-<div><button><a href="profileform.php">Profile</a></button>
-<button><a href="articleform.php">Article</a></button>
-    <button><a href="likeform.php">Like</a></button>
-    <button><a href="unlikeform.php">Unlike</a></button>
-    <button><a href="commentform.php">Comment</a></button>
-    <button><a href="roleform.php">Role</a></button>
     <button><a href="friendform.php">Friend</a></button>
     <button><a href="multimedia.php">Multimedia</a></button>
 </div>
@@ -58,7 +52,7 @@
     <input type="submit" name="send"  value="cancel" style="background-color: black;color: violet;width: 100px;"></td></tr>
 </table>
 </form>
-<div><footer style="background-color:black;text-align: center;width:100%;height:auto; color: white;font-size: 25px;"><p>&copy Designed by Group 8  YEAR TWO BIT GROUP A &reg 2024</p></footer></div>
+<div><footer style="background-color:black;text-align: center;width:100%;height:auto; color: white;font-size: 25px;"><p>&copy Designed by Group 5  YEAR TWO BIT GROUP A &reg 2024</p></footer></div>
 </center>
 </body>
 </html>

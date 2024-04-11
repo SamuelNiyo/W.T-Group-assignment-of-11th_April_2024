@@ -37,12 +37,6 @@
 <body>
 <center>
 <div> 
-<button><a href="profileform.php">Profile</a></button>
-<button><a href="articleform.php">Article</a></button>
-    <button><a href="likeform.php">Like</a></button>
-    <button><a href="unlikeform.php">Unlike</a></button>
-    <button><a href="commentform.php">Comment</a></button>
-    <button><a href="roleform.php">Role</a></button>
     <button><a href="friendform.php">Friend</a></button>
     <button><a href="multimedia.php">Multimedia</a></button>
 </div>

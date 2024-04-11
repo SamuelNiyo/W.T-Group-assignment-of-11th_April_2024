@@ -114,7 +114,8 @@ $result = $conn->query($sql);
                 if ($result->num_rows > 0) {
                     while ($row = $result->fetch_assoc()) {
                         echo '<div class="col-md-4 mb-4">';
-                        echo '<img src="' . $row['location'] . '" alt="' . $row['type'] . '" class="img-fluid">';
+                        echo '<source src="src="' . $row['location']'" type="video/mp4">
+                        </video> <p>Learn How to REMOVE TATTOO in Photoshop CC, CS6 _ Erase Tattoo Easily in Photoshop</p> </div>'
                         echo '<p>Type: ' . $row['type'] . '</p>';
                         echo '<p>Upload Date: ' . $row['upload_date'] . '</p>';
                         echo '</div>';

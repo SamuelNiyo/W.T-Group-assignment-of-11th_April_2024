@@ -68,13 +68,13 @@ $result = $conn->query($sql);
                                         <a class="nav-link" href="image.html">Images</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="audio.html">Audio</a>
+                                        <a class="nav-link" href="audio.php">Audio</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="video.html">Video</a>
+                                        <a class="nav-link" href="video.php">Video</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="articles.html">Articles</a>
+                                        <a class="nav-link" href="articles.php">Articles</a>
                                     </li>
                                     <li class="nav-item dropdown">
                                         <a class="nav-link dropdown-toggle" href="#" role="button"
@@ -82,7 +82,7 @@ $result = $conn->query($sql);
                                             Settings
                                         </a>
                                         <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item" href="login.html">Login</a></li>
+                                            <li><a class="dropdown-item" href="index.html">Login</a></li>
                                             <li><a class="dropdown-item" href="register.html">Register</a></li>
                                             <li><a class="dropdown-item" href="admin.html">Admin</a></li>
                                         </ul>

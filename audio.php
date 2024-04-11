@@ -18,21 +18,27 @@ $result = $conn->query($sql);
 ?>
 
 <!DOCTYPE html>
+
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>All In One BIT 2024</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- official website designed by G8 on 24th march 2024-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+    <title>Friends Company Ltd - About us</title>
+    <style>
+        .container2{
+            margin: 30px 150px;
+        }
+    </style>
+     <link rel="stylesheet" type="text/css" href="2style.css">
 </head>
-
 <body>
     <div class="container">
-        <!-- Navigation bar -->
-       <div class="container">
         <div class="row">
             <div class="col-auto">
                 <div class="box">
@@ -47,34 +53,25 @@ $result = $conn->query($sql);
                             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                                 <ul class="navbar-nav">
                                     <li class="nav-item">
-                                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="about.html">About</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="contact.html">Contat</a>
+                                        <a class="nav-link active" aria-current="page" href="Home page.html">Home</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="table.html">Tables</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="form.html">Forms</a>
-                                    </li>
-                                    <li class="nav-item">
                                         <a class="nav-link" href="list.html">List</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="image.html">Images</a>
+                                        <a class="nav-link" href="image.php">Images</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="audio.html">Audio</a>
+                                        <a class="nav-link" href="audio.php">Audio</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="video.html">Video</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="articles.html">Articles</a>
+                                        <a class="nav-link" href="articles.php">Articles</a>
                                     </li>
                                     <li class="nav-item dropdown">
                                         <a class="nav-link dropdown-toggle" href="#" role="button"
@@ -83,11 +80,11 @@ $result = $conn->query($sql);
                                         </a>
                                         <ul class="dropdown-menu">
                                             <li><a class="dropdown-item" href="login.html">Login</a></li>
-                                            <li><a class="dropdown-item" href="register.html">Register</a></li>
+                                            <li><a class="dropdown-item" href="registration.php">Register</a></li>
                                             <li><a class="dropdown-item" href="admin.html">Admin</a></li>
                                         </ul>
                                     </li>
-                                    <li>
+                                    <li> 
                                         <form class="d-flex" role="search">
                                             <input class="form-control me-2" type="search" placeholder="Search"
                                                 aria-label="Search">
