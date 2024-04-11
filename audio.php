@@ -13,7 +13,7 @@ if ($conn->connect_error) {
 }
 
 // Query to fetch multimedia data
-$sql = "SELECT mid, userid, type, location, upload_date FROM multimedia where type = 'image'";
+$sql = "SELECT mid, userid, type, location, upload_date FROM multimedia where type = 'audio'";
 $result = $conn->query($sql);
 ?>
 
