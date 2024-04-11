@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- official website designed by G8 on 24th march 2024-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Interface</title>
+    <style>
+        /* Basic styling for demonstration purposes */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 5;
+            padding: 5;
+        }
+.navigation a:link{
+  color: white;
+    padding: 5px;
+    margin: 5px;
+      border-radius: 15px;
+
+}
+.navigation a:visited{
+   color: white;
+     padding: 5px;
+     margin: 5px;
+       border-radius: 15px;
+}
+.navigation a:hover{
+    color: white;
+     padding: 5px;
+     margin: 5px;
+     border-radius: 15px;
+}
+ .navigation a:active{
+    color: white;
+     padding: 5px;
+     margin: 5px;
+       border-radius: 15px;
+}
+        .container {
+            display: flex;
+            align-items: flex-start;
+        }
+        .video-content {
+            flex: 1;
+            margin-right: 20px;
+            margin-left: 5px;
+        }
+        .video {
+            width: 100%;
+            height: 390px; /* Adjust height as needed */
+        }
+        .video-desc {
+            margin-top: 20px;
+        }
+        .new_video {
+            flex: 0 0 200px;
+        }
+        .new_video {
+            margin-bottom: 10px;
+        }
+        .new_video video {
+            width: 100%;
+            height:auto;
+        
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px 5px;
+            background-color: black;
+            border-bottom: 5px solid deeppink;
+        }
+        .logo {
+            width: 60px; /* Adjust logo size */
+            height: auto;
+        }
+        .navigation {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align:none;
+            flex-grow: 2; 
+        }
+        .navigation li {
+            display: inline-block;
+            margin-right: 5px;
+            padding: 5px;
+        }
+        .navigation li:last-child {
+            margin-right: 0;
+        }
+        .navigation li a {
+            text-decoration: none;
+            color: #333;
+        }
+    
+    </style>
+    <link rel="stylesheet" type="text/css" href="2style.css">
+</head>
+<body>
+
+
+<div class="header">
+    <img class="logo" src="log.png" alt="Logo">
+    <ul class="navigation">
+      <li><a href="home page.html">Home</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="contactus.html">Contact</a></li>
+        <li><a href="form.php">Form</a></li>
+        <li><a href="table.php">table</a></li>
+        <li><a href="list.html">Lists</a></li>
+        <li><a href="image1.html">Image</a></li>
+        <li><a href="video.html">Video</a></li>
+        <li><a href="audio.html">Audio</a></li>
+        <li><a href="articles.html">Article</a></li>
+        <li class="dropdown">
+    <a href="#">Setting</a>
+    <div class="dropdown-contents">
+        <a href="logout.php">Logout</a>
+        <a href="profileform.php">Profile</a>   
+    </div>
+</li>
+</ul>
+ <div><form action="search.php" method="GET">
+        <input type="text" name="query" placeholder="search here!!">&nbsp;<button style="background-color:white;border-radius: 15px;">search</button>
+    </form></div> </div>   
+</div>
+<div class="P1"><p>FRIEND COMPANY LTD</p></div>
+<div class="container">
+    <div class="video-content">
+    <video width="300" height="120" controls class="video">
+    <!-- Main Video Player -->
+    <source src="./video/How to CHANGE the SKY in Photoshop!.mp4" type="video/mp4"></video>
+        <!-- Video Description -->
+        <div class="video-desc">
+            <h2>How to CHANGE the SKY in Photoshop!</h2>
+            <br>
+        <button onclick="previousVideo()">Previous</button>
+        <button onclick="togglePlayPause()">Play/Pause</button>
+        <button onclick="nextVideo()">Next</button>
+           <h3><img src="log2.jpg" alt="new_video" style="height:30px;width: 40px;">CBB
+           <a href="#comments">&#128172; Comments</a> 
+            <a href="#like">&#128077; Like</a> 
+            <a href="#dislike">&#128078; Dislike</a> 
+            <a href="#subscribers">&#128100; Subscribes</a></h3>
+        </div>
+    </div>
+    
+    <!-- new video pending to be played-->
+    <div class="new_video">
+        <h2>Recommended Videos</h2>
+        <div class="new_video">
+        <video width="300" height="120" controls class="video">
+    <!-- Main Video Player -->
+    <source src="./video/How to Create a Login Systems in Java Eclipse.mp4" type="video/mp4"></video>
+     <p>How to Create a Login Systems in Java Eclipse</p></div>
+        <div class="new_video">
+        <video width="300" height="120" controls class="video">
+        <source src="./video/How To Create A Reflection _ Photoshop CC.mp4" type="video/mp4">
+        </video> <p>How To Create A Reflection _ Photoshop CC.mp4 </p>  
+        </div>
+        <div class="new_video">
+        <video width="300" height="120" controls class="video">
+        <source src="./video/Learn How to REMOVE TATTOO in Photoshop CC, CS6 _ Erase Tattoo Easily in Photoshop.mp4" type="video/mp4">
+        </video> <p>Learn How to REMOVE TATTOO in Photoshop CC, CS6 _ Erase Tattoo Easily in Photoshop</p>  
+        </div>
+        <!-- Add more recommended videos here -->
+    </div>
+</div>
+<div><footer style="background-color:black;text-align: center;width:100%;height:auto; color: white;font-size: 20px;"><p>&copy Designed by Group 8  YEAR TWO BIT GROUP A &reg 2024</p></footer></div>
+</body>
+</html>
